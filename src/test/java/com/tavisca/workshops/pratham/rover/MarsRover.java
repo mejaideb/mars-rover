@@ -3,7 +3,8 @@ package com.tavisca.workshops.pratham.rover;
 public class MarsRover {
     private Vector vector;
 
-    public MarsRover(Vector initialVector) {
+    public MarsRover(Vector initialVector)
+    {
         vector = initialVector;
     }
 

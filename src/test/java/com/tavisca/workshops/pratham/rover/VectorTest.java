@@ -17,40 +17,40 @@ public class VectorTest {
     @Test
     void vectorCanRotateLeftFromNorth() {
 
-        Vector r = new Vector(10, 10, 'W');
+        Vector r = new Vector(10, 10, 'N');
         Vector newVector = r.left();
-        assertEquals('W', r.direction);
+        assertEquals('W', newVector.direction);
     }
 
     @Test
     void vectorCanRotateLeftFromSouth() {
 
-        Vector r = new Vector(10, 10, 'E');
+        Vector r = new Vector(10, 10, 'N');
         Vector newVector = r.left();
-        assertEquals('E', r.direction);
+        assertEquals('E', newVector.direction);
     }
 
     @Test
     void vectorCanRotateLeftFromWest() {
 
-        Vector r = new Vector(10, 10, 'S');
+        Vector r = new Vector(10, 10, 'W');
         Vector newVector = r.left();
-        assertEquals('S', r.direction);
+        assertEquals('S', newVector.direction);
     }
 
     @Test
     void vectorCanRotateLeftFromEast() {
 
-        Vector r = new Vector(10, 10, 'N');
+        Vector r = new Vector(10, 10, 'E');
         Vector newVector = r.left();
-        assertEquals('N', r.direction);
+        assertEquals('N', newVector.direction);
     }
 
     @Test
     void vectorCanRotateRightFromNorth() {
-        Vector r = new Vector(10, 10, 'E');
+        Vector r = new Vector(10, 10, 'N');
         Vector newVector = r.right();
-        assertEquals('E', r.direction);
+        assertEquals('E', newVector.direction);
     }
 
     @Test
